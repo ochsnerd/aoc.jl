@@ -1,0 +1,7 @@
+name = "One"
+uuid = "e5b4d82e-a3b3-474f-b13f-83c63808acd8"
+authors = ["David Ochsner "]
+version = "0.1.0"
+
+[deps]
+Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
