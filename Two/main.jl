@@ -42,3 +42,9 @@ println(
 println(
     sum(power.(least_cubes.(gamefromstr.(eachline(open("input.txt"))))))
 )
+
+# equivalently
+eachlineoffile = eachline ∘ open
+powerfromstring(s) = @. power(least_cubes(gamefromstr(s)))
+powersfromfile = sum ∘ powerfromstring ∘ eachlineoffile
+println(powersfromfile("input.txt"))
